@@ -1,0 +1,1977 @@
+<!--
+ ____   __   __ _  ____  __  ____  __ _
+(  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+ ) _ ((  O )/    / ) _)(  O ))   / )  (
+(____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A demo website for the Deerfield Restaurant Template" />
+    <meta name="keywords" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deerfield.bonfork.net/our-menu" />
+    <meta property="og:title" content="Deerfield Restaurant" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="A demo website for the Deerfield Restaurant Template" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <title>Our Menu | Deerfield Restaurant</title>
+    <link rel="dns-prefetch" href="//use.fontawesome.com/">
+    <link rel="dns-prefetch" href="//use.typekit.net/">
+
+    <link rel="stylesheet" type="text/css" href="css/our-menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dro2hgb.css">
+
+    <!-- For Safari date/time picker -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker@1.13.0/jquery.timepicker.min.css">
+
+    <!-- Schema json -->
+    <script id="data" type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Restaurant",
+          "priceRange": "$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "Canada",
+            "postalCode": "M5E 1Z9",
+            "streetAddress": "12 Yonge St."
+          },
+          "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 43.643162,
+              "longitude": -79.376259
+          },
+          "name": "Deerfield Restaurant",
+          "telephone": "+44 (0)1234 56789",
+          "url": "https://deerfield.bonfork.net",
+          "paymentAccepted": "",
+          "description": "Deerfield Restaurant Demo description. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam id urna egestas ultricies nulla at viverra nibh donec sollicitudin metus sit amet est laoreet gravida donec cursus enim quis.",
+        
+          "servesCuisine": "French cuisine",
+          "hasMenu": "https://deerfield.bonfork.net/menu",
+          "acceptsReservations": "True",
+          
+          "openingHoursSpecification": [
+              {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                      "Monday"
+                  ],
+                  "is_open": false
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "11:00",
+                "closes": "23:00",
+                "is_open": true
+            }
+          ],
+
+          {
+            "hasOfferCatalog":{
+               "@type":"OfferCatalog",
+               "name":"Menu",
+               "itemListElement":[
+                  {
+                     "@type":"OfferCatalog",
+                     "name":"Main Menu",
+                     "itemListElement":[
+                        {
+                           "@type":"OfferCatalog",
+                           "name":"Dinner",
+                           "itemListElement":[
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":5.00,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Soup of the Day",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":7.95,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Lobster Bisque",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":5.95,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Traditional New England Seafood Chowder",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":26.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Traditional Filet Mignon",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Bacon Bourbon Tenderloin Tips",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":23.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Rustlers Ribeye",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":19.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Emeril’s Chicken",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":19.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Chicken Scampi Roja",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":19.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Veal Saltimbocca",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":17.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Traditional Chicken Scampi",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":16.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Chicken Picatta",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":16.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Chicken Marsala",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                           ]
+                        },
+                        {
+                           "@type":"OfferCatalog",
+                           "name":"Lunch",
+                           "itemListElement":[
+                                {
+                                    "@type":"Offer",
+                                    "priceCurrency":"£",
+                                    "price":5.00,
+                                    "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Soup of the Day",
+                                    "description":"",
+                                        "image":[
+                                            ""
+                                        ],
+                                        "nutrition":{
+                                            "@type":"NutritionInformation",
+                                            "calories":""
+                                        }
+                                    }
+                                },
+                                {
+                                    "@type":"Offer",
+                                    "priceCurrency":"£",
+                                    "price":5.95,
+                                    "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Lobster Bisque",
+                                    "description":"",
+                                    "image":[
+                                        ""
+                                    ],
+                                    "nutrition":{
+                                        "@type":"NutritionInformation",
+                                        "calories":""
+                                    }
+                                    }
+                                },
+                                {
+                                    "@type":"Offer",
+                                    "priceCurrency":"£",
+                                    "price":9.95,
+                                    "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Buffalo Wings or Tenders",
+                                    "description":"",
+                                    "image":[
+                                        ""
+                                    ],
+                                    "nutrition":{
+                                        "@type":"NutritionInformation",
+                                        "calories":""
+                                    }
+                                    }
+                                },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":4.95,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Mozzarella Sticks",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":8.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Red Hook Ale Battered Popcorn Shrimp",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Onion Rings",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Lobster Roll",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":4.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Mozzarella Sticks",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":7.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Crab Cake Sandwich",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":9.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Tuscan Grilled Chicken Panini",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":9.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Southwest Turkey Club",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":9.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Mediterranean Turkey Panini",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Pulled Pork",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                           ]
+                        },
+                        {
+                            "@type":"OfferCatalog",
+                            "name":"Drinks",
+                            "itemListElement":[
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":5.00,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Beers",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":19.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Whiskey",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":25.95,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"White Spirits",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":23.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Rum",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":10.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Shiraz 2011 – Lemberg",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":10.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Merlot 2012 – Tulbagh Winery",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":12.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Viognier 2009 – Saronsberg",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":15.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"White Pearl – 2008 – Semillon Sauvignon Blanc",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":10.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Chenin Blanc 2012?Tulbagh Winery",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":21.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Sauvignon Blanc 2011 – Lemberg",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Riesling 2012 – Theuniskraal",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":21.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Brandy",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                            ]
+                         },
+                         {
+                            "@type":"OfferCatalog",
+                            "name":"Desserts",
+                            "itemListElement":[
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":5.95,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Mixed berry mousse",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":10.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Mango and coconut soufflé",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"£",
+                                 "price":6.95,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"Homemade carrot cake",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Matcha cake",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":7.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Vegan chocolate cake",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.00,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Praline and ganache cake",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Blondie with vanilla ice cream",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":10.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Re-invented cheesecake",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":15.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"XL lemon meringue pie",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":5.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Tea and herbal tea ice cream",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":12.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Chocolate Divine",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"£",
+                                "price":12.95,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"Harvest Sensation",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                            ]
+                         },
+                     ]
+                  }
+               ]
+            }
+         }
+      }
+  </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ID_PROPERTY_HERE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'ID_PROPERTY_HERE');
+    </script>
+
+    <script>
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.indexOf('safari') != -1) {
+            if (ua.indexOf('chrome') > -1) {
+                console.log('chrome');
+            } else {
+                if (ua.match(/iPad/i) || ua.match(/iPhone/i)) {
+                    console.log('ios safari');
+                }
+                else {
+                    jQuery(function ($) { //on document.ready
+                        $('#date').datepicker({ dateFormat: 'yy-mm-dd', minDate: 0 });
+                    });
+
+                    $(function () {
+                        $('#time').timepicker().val('7:30pm');
+                    });
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="fixed-top main-menu">
+        <ul class="nav flex-column">
+            <li class="nav-item delay-1">
+                <a class="nav-link" href="our-menu.html" title="Our Menus">Our Menus</a>
+            </li>
+            <li class="nav-item delay-2">
+                <a class="nav-link " href="about.html" title="About">About</a>
+            </li>
+            <li class="nav-item delay-3">
+                <a class="nav-link " href="gallery.html" title="Gallery">Gallery</a>
+            </li>
+            <li class="nav-item delay-4">
+                <a class="nav-link " href="news-events.html" title="News &amp; Events">News &amp; Events</a>
+            </li>
+            <li class="nav-item delay-5">
+                <a class="nav-link " href="contact.html" title="Contact">Contact</a>
+            </li>
+            <li class="nav-item delay-6">
+                <a class="nav-link" href="catering.html" title="Catering">Catering</a>
+            </li>
+        </ul>
+        <div class="social-media d-none d-lg-block">
+            <a href="#" title="Social Icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="Social Icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="Social Icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="fixed-top reservation-menu">
+        <span id="close-reservation">&times;</span>
+        <h2>Make a
+            <br> Reservation</h2>
+            <div class="alert alert-success" role="alert" id="top-alert">
+                Your reservation request has been sent. One of our staff will get back to you with a confirmation.
+            </div>
+            <div class="alert alert-danger" role="alert" id="top-alert">
+                Something went wrong!
+            </div>
+        <form class="mx-auto px-3 mt-4" method="post" id="reservation-form">
+            <div class="form-group">
+                <label for="No Guests">No. of Guests</label>
+                <input type="number" name="guests" id="guests" class="form-control" value="2">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="Time">Time</label>
+                    <input type="time" name="Time" id="time" class="form-control" value="19:30">
+                </div>
+                <div class="col">
+                    <label for="Date">Date</label>
+                    <input type="date" name="Date" id="date" class="form-control">
+                </div>
+            </div>
+
+            <label for="Name">Name</label>
+            <input type="text" name="name" id="name" class="form-control">
+
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" class="form-control">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" class="form-control">
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="agreeCheckbox">
+                <label class="custom-control-label" for="agreeCheckbox">I agree, Lorem ipsum dolor sit amet, consectetur adipisicing elit</label>
+            </div>
+
+            <div class="outline-btn">
+                <button type="submit" class="btn btn-send-reservation">
+                    Reserve a Table
+                </button>
+            </div>
+        </form>
+        <div class="social-media d-none d-lg-block">
+            <a href="#" title="Social Icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="Social Icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="Social Icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" title="Go to homepage">
+                <img src="images/logo-green.svg" class="green-logo" alt="Green Logo">
+                <img src="images/logo.svg" class="main-logo" alt="Logo">
+            </a>
+
+            <ul class="navbar-nav ml-auto main-nav">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span class="open-text" id="open-text">Open Today</span>
+                        <br>
+                        <span class="open-hours">11AM - 10.30PM</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="outline-btn">
+                        <a href="#" class="btn btn-reserve" title="Reserve Now">
+                            Reserve Now
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-button nav-link">
+                        <span id="nav-icon3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="menu-text">Menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1 class="text-center">Our Menu</h1>
+        <div class="row no-gutters">
+            <div class="col-10">
+                <img src="images/menu-header.jpg" alt="Menu Header" class="w-100 h-auto">
+                <img src="images/stamp.svg" alt="Stamp" class="stamp-logo d-none d-lg-block" id="stamp">
+            </div>
+            <div class="col-2">
+                <div class="anchor-links text-center">
+                    <a href="#dinner" title="Dinner Menu">Dinner</a>
+                    <a href="#lunch" title="Lunch Menu">Lunch</a>
+                    <a href="#drinks" title="Drinks Menu">Drinks</a>
+                    <a href="#deserts" title="Desserts Menu">Deserts</a>
+                </div>
+
+                <div class="social-media d-none d-lg-flex">
+                    <a href="#" title="Social Icon">
+                        <img src="images/twitter-icon.svg" alt="Social Icon">
+                    </a>
+                    <a href="#" title="Social Icon">
+                        <img src="images/facebook-icon.svg" alt="Social Icon">
+                    </a>
+                    <a href="#" title="Social Icon">
+                        <img src="images/instagram-icon.svg" alt="Social Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dinner" class="dinner-menu">
+        <div class="container">
+            <fieldset class="border main-fieldset">
+                <legend class="text-center">Dinner</legend>
+                <fieldset class="border inner-fieldset">
+                    <legend class="text-center"></legend>
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 class="pt-4" itemprop="name">
+                                <span>Starters</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Soup of the Day</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Lobster Bisque</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£7.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Traditional New England Seafood Chowder</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Traditional Filet Mignon</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£26.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Bacon Bourbon Tenderloin Tips
+                                        <span class="badge badge-secondary">V</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Rustlers Ribeye
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£23.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 itemprop="name">
+                                <span>Mains</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Emeril’s Chicken</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£19.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Chicken Scampi Roja</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£19.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Veal Saltimbocca</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£19.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Traditional Chicken Scampi</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£17.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Chicken Picatta</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£16.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Chicken Marsala
+                                        <span class="badge badge-secondary" style="margin-left: 22px;">V</span>
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£16.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.</h6>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                                <h6 class="mr-3">
+                                    <span class="badge badge-secondary">V</span> Vegetarian</h6>
+                                <h6>
+                                    <span class="badge badge-secondary">GF</span> Gluten free</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <div class="outline-btn">
+                <a href="https://www.dropbox.com/s/gidt0gas70zossj/menu.pdf?dl=0" target="_blank" class="btn btn-download" title="Download Menu">
+                    Download Menu
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="lunch" class="lunch-menu">
+        <div class="container">
+            <fieldset class="border main-fieldset">
+                <legend class="text-center">Lunch</legend>
+                <fieldset class="border inner-fieldset">
+                    <legend class="text-center"></legend>
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 class="pt-4" itemprop="name">
+                                <span>Starters</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Soup of the Day</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Lobster Bisque</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Buffalo Wings or Tenders</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£9.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Mozzarella Sticks</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£4.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Red Hook Ale Battered Popcorn Shrimp
+                                        <span class="badge badge-secondary">V</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£8.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Onion Rings
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 itemprop="name">
+                                <span>Mains</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Lobster Roll</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Crab Cake Sandwich</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£7.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Tuscan Grilled Chicken Panini</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£9.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Southwest Turkey Club</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£9.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Mediterranean Turkey Panini</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£9.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Pulled Pork
+                                        <span class="badge badge-secondary" style="margin-left: 22px;">V</span>
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.</h6>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                                <h6 class="mr-3">
+                                    <span class="badge badge-secondary">V</span> Vegetarian</h6>
+                                <h6>
+                                    <span class="badge badge-secondary">GF</span> Gluten free</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <div class="outline-btn">
+                <a href="https://www.dropbox.com/s/gidt0gas70zossj/menu.pdf?dl=0" target="_blank" class="btn btn-download" title="Download Menu">
+                    Download Menu
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="drinks" class="drinks-menu">
+        <div class="container">
+            <fieldset class="border main-fieldset">
+                <legend class="text-center">Drinks</legend>
+                <fieldset class="border inner-fieldset">
+                    <legend class="text-center"></legend>
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 class="pt-4" itemprop="name">
+                                <span>Starters</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Beers</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Whiskey</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£19.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">White Spirits</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£25.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Rum</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£23.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Shiraz 2011 – Lemberg
+                                        <span class="badge badge-secondary">V</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£10.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Merlot 2012 – Tulbagh Winery
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£10.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 itemprop="name">
+                                <span>Mains</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Viognier 2009 – Saronsberg</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£12.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">White Pearl – 2008 – Semillon Sauvignon Blanc</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£15.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Chenin Blanc 2012?Tulbagh Winery</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£10.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Sauvignon Blanc 2011 – Lemberg</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£21.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Riesling 2012 – Theuniskraal</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Brandy
+                                        <span class="badge badge-secondary" style="margin-left: 22px;">V</span>
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£21.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.</h6>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                                <h6 class="mr-3">
+                                    <span class="badge badge-secondary">V</span> Vegetarian</h6>
+                                <h6>
+                                    <span class="badge badge-secondary">GF</span> Gluten free</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <div class="outline-btn">
+                <a href="https://www.dropbox.com/s/gidt0gas70zossj/menu.pdf?dl=0" target="_blank" class="btn btn-download" title="Download Menu">
+                    Download Menu
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="deserts" class="deserts-menu">
+        <div class="container">
+            <fieldset class="border main-fieldset">
+                <legend class="text-center">Deserts</legend>
+                <fieldset class="border inner-fieldset">
+                    <legend class="text-center"></legend>
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 class="pt-4" itemprop="name">
+                                <span>Starters</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Mixed berry mousse</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Mango and coconut soufflé</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£10.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Homemade carrot cake</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£6.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Matcha cake</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Vegan chocolate cake
+                                        <span class="badge badge-secondary">V</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£7.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Praline and ganache cake
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list" itemscope itemtype="http://schema.org/MenuSection">
+                        <center>
+                            <h3 itemprop="name">
+                                <span>Mains</span>
+                            </h3>
+                        </center>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Blondie with vanilla ice cream</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Re-invented cheesecake</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£10.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">XL lemon meringue pie</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£15.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Tea and herbal tea ice cream</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£5.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Chocolate Divine</h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£12.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" itemscope itemtype="http://schema.org/MenuItem">
+                            <div class="row no-gutters">
+                                <div class="col-9">
+                                    <h6 itemprop="name">Harvest Sensation
+                                        <span class="badge badge-secondary" style="margin-left: 22px;">V</span>
+                                        <span class="badge badge-secondary">GF</span>
+                                    </h6>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h6 itemprop="price">£12.95</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.</h6>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                                <h6 class="mr-3">
+                                    <span class="badge badge-secondary">V</span> Vegetarian</h6>
+                                <h6>
+                                    <span class="badge badge-secondary">GF</span> Gluten free</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <div class="outline-btn">
+                <a href="https://www.dropbox.com/s/gidt0gas70zossj/menu.pdf?dl=0" target="_blank" class="btn btn-download" title="Download Menu">
+                    Download Menu
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="row no-gutters">
+            <div class="col-xl-7 left-footer" style="padding:100px 100px 200px 100px;">
+                <div class="row">
+                    <div class="col-lg-3 mb-4 text-center text-lg-left">
+                        <img src="images/footer-logo.svg" alt="Logo">
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <h6 class="mb-4">Contact</h6>
+                        <address itemscope itemtype="http://schema.org/ContactPoint">
+                            <span itemprop="telephone">
+                                <a href="tel:+44 (0)1234 56789" class="phone-link" title="Telephone">+44 (0)1234 56789</a>
+                            </span>
+                            <span itemprop="email">
+                                <a href="mailto:info@restaurantname.com" class="email-link" title="Email">info@restaurantname.com</a>
+                            </span>
+                        </address>
+
+                        <h6 class="my-4">Find Us</h6>
+                        <address itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">357 Stamn Road</span>
+                            <span itemprop="addressLocality">Rainville</span>
+                            <span itemprop="addressRegion">CA</span>
+                        </address>
+                    </div>
+                    <div class="col-lg-5">
+                        <h6 class="mb-4">Opening Times</h6>
+                        <div class="footer-opening-times">
+                        </div>
+                    </div>
+                </div>
+                <span class="copyright">Copyright 2019 Deerfield</span>
+                <span class="privacy">
+                    <a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a>
+                </span>
+            </div>
+            <div class="col-xl-5 right-footer" style="padding: 100px 20px;">
+                <h2>Subscribe To
+                    <br> Our Newsletter</h2>
+                    <div class="alert alert-success newsletter-alert" role="alert">
+                        You have been subscribed to our newsletter!
+                    </div>
+                    <div class="alert alert-danger newsletter-alert-error" role="alert">
+                        Something went wrong!
+                    </div>
+                <form method="post" id="subscribe-form">
+                    <div class="input-group mt-4 mb-5">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                        </div>
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon1">
+                        <button type="submit" class="arrow-btn">
+                            <img src="images/arrow-right.svg" alt="Arrow Right" class="arrow-img">
+                        </button>
+                    </div>
+
+                </form>
+                <div class="footer-social-media">
+                    <a href="#" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <h6 class="powered">Restaurant Website By
+                    <strong>
+                        <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                    </strong>
+                </h6>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/cleave.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/subscribe.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800
+        });
+
+        $(window).scroll(function () {
+            var theta = $(window).scrollTop() / 100;
+            $('#stamp').css({ transform: 'rotate(' + theta + 'rad)' });
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
